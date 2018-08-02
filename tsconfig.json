@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+	  "outDir": "dist/static",
+	  "sourceMap": true,
+	  "noImplicitAny": true,
+	  "target": "es5",
+	  "jsx": "react",
+	  "skipLibCheck": true,
+	  "moduleResolution": "Node",
+	  "baseUrl": ".",
+	  "paths": {
+		"*": ["node_modules/*"]
+	  }
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		 "node_modules",
+	  "node_modules_bk",
+	  "dist",
+	  "webpack",
+	  "./src/server"
+	]
+  }
+  
