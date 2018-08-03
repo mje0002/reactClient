@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-	  "outDir": "dist/static",
+	  "outDir": "./dist/",
 	  "sourceMap": true,
 	  "noImplicitAny": true,
 	  "target": "es5",
@@ -14,13 +14,13 @@
 	},
 	"include": [
 		"./src/**/*"
-	],
-	"exclude": [
-		 "node_modules",
-	  "node_modules_bk",
-	  "dist",
-	  "webpack",
-	  "./src/server"
-	]
+	]//,
+	// "exclude": [
+	// 	 "node_modules",
+	//   "node_modules_bk",
+	//   "dist",
+	//   "webpack",
+	//   "./src/server"
+	// ]
   }
   

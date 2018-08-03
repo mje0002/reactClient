@@ -31,7 +31,8 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			favicon: 'public/favicon.ico',
 			template: 'src/client/index.ejs',
-			title: 'Node React App'
+			title: 'Node React App',
+			libraryTarget: 'window'
 		})
 	],
 	resolve: {
