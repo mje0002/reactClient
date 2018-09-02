@@ -8,7 +8,15 @@ const NODE_MODULES_DIR = path.resolve(__dirname, 'node_modules/')
 module.exports = {
 	cache: true,
 	context: __dirname,
-	devtool: 'source-map',
+	mode: 'development',
+	devtool: 'inline-source-map',
+	devServer: {
+		//contentBase: './dist',
+		host: 'localhost',
+		port: 9000,
+		open: true,
+		historyApiFallback: true
+	},
 	entry: {
 		app: './src/client/index.tsx'
 	},
@@ -24,7 +32,7 @@ module.exports = {
 	output: {
 		filename: '[name].js',
 		path: path.join(__dirname + '/dist/public')//,
-		//publicPath: '/'
+		//publicPath: '/' // Hot reloading won’t work as expected for nested routes without it
 	},
 	plugins: [
 		//HtmlWebpackPlugin will generate the index.html file
