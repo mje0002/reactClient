@@ -1,0 +1,39 @@
+/**
+	DEFAULT TSLINT FILE
+*/
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {
+		"semicolon": [true, "never"],
+		"quotemark": [true, "single"],
+		"indent": [true, "tabs"],
+		"no-trailing-whitespace": false,
+		"trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+		"max-line-length": [false, 120]
+	},
+    "rules": {
+		"object-literal-sort-keys": false,
+		"semicolon": [true, "never"],
+		"quotemark": [true, "single", "jsx-double"],
+		"indent": [true, "tabs"],
+		"no-trailing-whitespace": false,
+		"trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+		"max-line-length": [false, 120],
+		"one-line": [false],
+		"comment-format": [false],
+		"no-console": {"severity": "warning", "options": [
+				"debug",
+				"info",
+				"log",
+				"time",
+				"timeEnd",
+				"trace"
+			]
+		},
+		"no-unused-variable": true
+	},
+    "rulesDirectory": []
+}
