@@ -1,10 +1,10 @@
 import * as express from 'express'
 import * as path from 'path'
+import config from './config/config'
+import version from './lib/version'
+import logger from './logger/logger'
 import routeLoggerMiddleware from './middleware/route-logger'
 import versionRouter from './routers/version'
-import version from './lib/version'
-import config from './config/config'
-import logger from './logger/logger'
 
 const app = express()
 

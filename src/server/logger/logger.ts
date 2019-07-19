@@ -1,12 +1,12 @@
-import config from '../config/config'
 import * as winston from 'winston'
+import config from '../config/config'
 
 const loggerNameFormat = (info: any, data: {name: string}) => {
 	info.name = data.name
 	return info
 }
 
-let transports = []
+const transports = []
 transports.push(new winston.transports.Console())
 
 const logger = winston.createLogger({
