@@ -15,13 +15,14 @@ routeLoggerMiddleware(app, logger)
 versionRouter(app)
 
 // Serve static assets
-const staticPath = path.resolve(__dirname, 'public')
 
-app.use(express.static(staticPath))
+app.use(express.static('dist/public'))
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
-	res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+	
+	res.sendFile(path.join(__dirname, 'index.html'), { root: 'dist/public' })
+	
 })
 
 const versionInfo = version()
